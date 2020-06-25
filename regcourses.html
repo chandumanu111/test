@@ -1,7 +1,36 @@
 <html>
-	<head></head>
+	<head>
+		
+			<script type="text/javascript">
+
+        function tosubmit() {
+          
+            var mytext1 = document.getElementById("fname").value;
+
+      
+            localStorage.setItem("fname", mytext1);
+            
+            var mytext2 = document.getElementById("lname").value;
+
+      
+            localStorage.setItem("lname", mytext2);
+           
+            var mytext3 = document.getElementById("phonenum").value;
+
+      
+            localStorage.setItem("phonenum", mytext3);
+           
+            
+
+
+            return true;
+        }
+
+    </script> 
+		
+	</head>
 	<body> 
-		<form>
+		<form action="displaypage.html" method="post" onsubmit="tosubmit();">
 			<fieldset>
 			<legend style="color:red;font-size:30px">Registration Form</legend>
 			<label for="fname">FirstName:  </label>
@@ -9,9 +38,9 @@
 			<label for="lname">LastName:  </label>
 			<input type="text" id="lname" name="lname"><br>
 			<p style="font:20px">Degree</p>
-			<input type="radio" id="masters" name="degree" value="masters">
+			<input type="radio" id="masters" name="degree" >
 			<label for="masters">Masters</label><br>
-			<input type="radio" id="bachelors" name="degree" value="bachelors">
+			<input type="radio" id="bachelors" name="degree" >
 			<label for="bachelors">Bachelors</label><br><br>
 			<label for="phonenum">MobileNum: </label>
 			<input type="number" id="phonenum" name="number"><br>
