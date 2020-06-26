@@ -1,51 +1,110 @@
 <html>
-<head></head>
-<body>
+<head>
+	<style>
+		body{
+			background-image:url('bgimage.jpg');
+			
+		}
+		
+		h4.hid {
+  display: none;
+}
+.s {
+  text-align: left;
+  
+}
+
+tr:nth-child(even) {background-color: aqua;}
+.m {
+  text-align: right;
+  
+}
+
+		[class=clgname]{
+			background-color: aqua;
+			position:static;
+			
+			}
+		
+		tr[target="os"]{
+			
+			  background-color: aqua;
+			}
+		
+		
+		a:hover {
+  background-color: red;
+  
+	}
+	a{
+		color:yellow;
+	}
+	
+	p.tab{
+		outline-style: solid;
+		outline-color:red;
+		position:static;
+		}
+	
+	
+	a:link, a:visited {
+  background-color: yellow;
+  color: red;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: white;
+}
+	</style>
+	
+</head>
+<body style="color:white">
 </div>
 		<div class="details">
 
 		<h1>Name:Manasa Krishna</h1>
-		<h2>College Name:Vignan's University</h2>
+		<h2 class="clgname">College Name:Vignan's University</h2>
 		<h3>Streamname:<a href="htmlp3.html">Computer Science and engineering</a></h3>
+		<h4 class="hid">THis text is hidden</h4>
 		<p>To Register click<a href="regcourses.html">here</a></p>
 		</div>
-		<div class="table">
+		<div class="tab">
 		<p>Previous semester marks and subjects</p>
 	
-
+<p class="tab">
 			<table style="width:30%" border="1px" cellpadding="0" cellspacing="0" text-align="center">
 			  <tr>
 				<th>Subject</th>
 				<th>Marks</th> 
 			
 			  </tr>
-			  <tr>
-				<td>Operating systems</td>
-				<td>90</td>
+			  <tr target="os">
+				<td class="s">Operating systems</td>
+				<td class="m">90</td>
+			  </tr>
+			  <tr target="cd">
+				<td class="s">Compiler design</td>
+				<td class="m">93</td>
 			  </tr>
 			  <tr>
-				<td>Compiler design</td>
-				<td>93</td>
+				<td class="s">Web technologies</td>
+				<td class="m">89</td>
 			  </tr>
 			  <tr>
-				<td>Web technologies</td>
-				<td>89</td>
+				<td class="s"> Python programming</td>
+				<td class="m">89</td>
 			  </tr>
 			  <tr>
-				<td>Python programming</td>
-				<td>89</td>
+				<td class="s">Distributed systems</td>
+				<td class="m">85</td>
 			  </tr>
-			  <tr>
-				<td>Distributed systems</td>
-				<td>85</td>
-			  </tr>
-			  <th>
-				  <td>Distributed systems</td>
-					<td>85</td>
-			  </th>
-			</table>
+			  			</table>
 			</div>
-
+</p>
 
 
 </body>
